@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+  color: initial;
+}
+.card * {
+  overflow: hidden;
+}
+
+.media {
+  object-fit: scale-down;
+  max-height: 200px;
+}
+
+.primaryText {
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.description {
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clickable {
+  text-decoration: none;
+  color: initial;
+}

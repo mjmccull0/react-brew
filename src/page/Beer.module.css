@@ -1,0 +1,73 @@
+.beer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+.primaryText {
+  font-size: 6vw;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  order: -1;
+  max-height: 50vh;
+}
+
+.image {
+  object-fit: contain;
+  min-width: 20vw;
+  max-width: 100%;
+}
+
+.description {
+  font-size: 4vw;
+}
+
+.brewers_tips {
+}
+
+.ingredients {
+}
+
+.ingredient {
+}
+
+.first_brewed {
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+  .beer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .primaryText {
+    font-size: 3vw;
+  }
+
+  .description {
+    font-size: 2vw;
+  }
+
+  .media {
+    order: 0;
+    max-height: 100vh;
+    min-height: 40vw;
+  }
+
+  .description {
+    grid-column: 1 / -1;
+  }
+
+}
